@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_padding">15dp</dimen>
+    <dimen name="btn_radius">75dp</dimen>
+    <dimen name="btn_border_padding">5dp</dimen>
+    <dimen name="btn_border_padding2">5dp</dimen>
+</resources>

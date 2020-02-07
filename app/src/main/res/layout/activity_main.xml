@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_profile"/>
+</LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingStart="16dp"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:paddingEnd="16dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:text="This is title"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_subtitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingStart="16dp"-->
+<!--            android:paddingEnd="16dp"-->
+<!--            android:text="This is description"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_title" />-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_services"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16dp"-->
+<!--            app:cardBackgroundColor="@color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/layout_services"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="16dp">-->
+
+<!--                <include-->
+<!--                    android:id="@+id/service1"-->
+<!--                    layout="@layout/item_row_service"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/service2"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/layout_services" />-->
+
+<!--                <include-->
+<!--                    android:id="@+id/service2"-->
+<!--                    layout="@layout/item_row_service"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/service3"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/service1" />-->
+
+<!--                <include-->
+<!--                    android:id="@+id/service3"-->
+<!--                    layout="@layout/item_row_service"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/layout_services"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/service2" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_section_title"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="Section Title"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/ic_section1"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cv_services" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_section_subtitle"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/ic_section1"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_section_title" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/ic_section1"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="@color/colorAccent"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_section_subtitle"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cv_services"-->
+<!--            app:layout_constraintTop_toTopOf="@id/tv_section_title" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_section1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_section_subtitle" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_section2_title"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="Section 2 Title"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/ic_section2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/rv_section1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_section2_subtitle"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/ic_section2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_section2_title" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/ic_section2"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:background="@color/colorAccent"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_section2_subtitle"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/tv_section2_title" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_section2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_section2_subtitle" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</androidx.core.widget.NestedScrollView>-->
